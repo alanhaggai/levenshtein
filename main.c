@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "levenshtein.h"
 
-void usage(char *prog) {
+void usage(const char *prog) {
     printf("Usage: %s STRING1 STRING2\n", prog);
 }
 

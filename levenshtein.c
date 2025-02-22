@@ -1,14 +1,14 @@
 #include <string.h>
 
-char head(char *str) {
+char head(const char *str) {
     return str[0];
 }
 
-char *tail(char *str) {
-    return str + 1;
+char *tail(const char *str) {
+    return (char *)str + 1;
 }
 
-int levenshtein(char *str1, char *str2) {
+int levenshtein(const char *str1, const char *str2) {
     int d1 = 0,
         d2 = 0,
         d3 = 0;
