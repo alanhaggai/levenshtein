@@ -1,5 +1,5 @@
 all: liblevenshtein.so
-	LD_LIBRARY_PATH=. gcc -Wall -L. -llevenshtein -o levenshtein main.c
+	gcc -Wall main.c -L. -llevenshtein -Wl,-rpath= -o levenshtein
 
 liblevenshtein.so:
 	gcc -c -Wall -Werror -fpic levenshtein.c
