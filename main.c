@@ -2,7 +2,7 @@
 #include "levenshtein.h"
 
 void usage(const char *prog) {
-    printf("Usage: %s STRING1 STRING2\n", prog);
+    fprintf(stderr, "Usage: %s STRING1 STRING2\n", prog);
 }
 
 int main(int argc, char* argv[]) {
