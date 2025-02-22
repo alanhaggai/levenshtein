@@ -1,5 +1,4 @@
 #include <string.h>
-#include <stdio.h>
 
 char head(char *str) {
     return str[0];
