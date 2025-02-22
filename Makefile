@@ -1,5 +1,5 @@
 all: liblevenshtein.so
-	gcc -Wall main.c -L. -llevenshtein -Wl,-rpath= -o levenshtein
+	gcc -Wall main.c -L. -llevenshtein -Wl,-rpath=. -o levenshtein
 
 liblevenshtein.so:
 	gcc -c -Wall -Werror -fpic levenshtein.c
